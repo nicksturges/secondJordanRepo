@@ -23,12 +23,12 @@ body{
 
 .card{
     margin: auto;
-    height: 50%;
-    width: 25%;
+    /* height: 50%; */
+    /* width: 25%; */
     /* flex-direction: column; */
     background: rgb(212, 58, 212);
 }
 a{
      margin-top: 5px;
-    margin-left: 75px
+    margin-left: 55px
 }
