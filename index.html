@@ -10,12 +10,23 @@
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <style>
-        p {
-          text-align: center;
-          font-size: 60px;
-          margin-top: 0px;
+        .d-inline-flex{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+           
+            overflow-x: auto;
+            white-space: nowrap;
+            
         }
-        </style>
+            p{
+              
+              display: inline-block;
+              
+              font-size: 120%;
+              /* margin-top: 0px; */
+            }
+            </style>
 <body>
    <div class="container">
        <div class="row">
@@ -25,13 +36,14 @@
         </div>
     </div>
     <div class="container">
-        
-        <div class="row">
-            <div class="col">
-                <p id="countdown"></p>
+            <div class="row">
+                <div class="col">
+                        <div class="d-inline-flex p-2 bd-highlight">
+                            <p id="countdown"></p>
+                        </div>
+                </div>
             </div>
         </div>
-    </div>
             
         
             
@@ -75,7 +87,7 @@
           var seconds = Math.floor((distance % (1000 * 60)) / 1000);
             
           // Output the result in an element with id="demo"
-          document.getElementById("countdown").innerHTML = days + " days" + ' ' + hours  + " hours" + ' ' + minutes + " minutes" +' '+ seconds + " seconds";
+          document.getElementById("countdown").innerHTML = days + " days" +"|"+ hours  + " hours" +"|"+ minutes + " minutes" +"|"+ seconds + " seconds";
             
           // If the count down is over, write some text 
           if (distance < 0) {

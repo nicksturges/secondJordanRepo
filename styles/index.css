@@ -18,7 +18,11 @@ body{
 }
 
 #countdown{
-    color: turquoise
+    color: turquoise;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: visible
+    
 }
 
 .card{
